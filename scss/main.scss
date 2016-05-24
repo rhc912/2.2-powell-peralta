@@ -1,0 +1,14 @@
+/* Bootstrap Variables */
+$icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+
+
+$brand-primary: darken(red, 6.5%) !default; // #337ab7
+// Install Bootstrap
+  @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+
+
+nav {
+  ul{
+    list-style: none;
+  }
+}
