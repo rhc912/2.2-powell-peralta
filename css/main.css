@@ -5908,10 +5908,19 @@ button.close {
   border-bottom: 3px solid #84827F; }
 
 .wrapper {
-  background: url("/Users/robertcable/Documents/code/2.2-powell-peralta-bootstrap/bower_components/bootstrap-sass/assets/images/skateboard-images/bg.jpg") no-repeat;
+  background: url("../images/skateboard-images/bg.jpg") no-repeat;
   background-color: #555453;
   background-size: cover;
-  max-width: 100%; }
+  max-width: 100%;
+  position: relative; }
+  .wrapper:before {
+    content: "";
+    background-color: rgba(50, 50, 50, 0.7);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; }
 
 p {
   color: #999999; }
@@ -5928,7 +5937,7 @@ h2 {
   display: inline-block; }
 .top-nav span {
   text-transform: uppercase;
-  color: black;
+  color: white;
   margin-right: 82px; }
 .top-nav .fa {
   color: white; }
@@ -5944,10 +5953,23 @@ h2 {
   margin: 0 auto; }
 
 .slide {
-  background: url("/Users/robertcable/Documents/code/2.2-powell-peralta-bootstrap/bower_components/bootstrap-sass/assets/images/skateboard-images/top-image.png");
+  background: url("../images/skateboard-images/top-image.png");
   background-size: cover;
   max-width: 100%;
+  position: relative;
   border: 6px solid white; }
+  .slide:before {
+    content: "";
+    background: url("../images/skateboard-images/grid.png");
+    opacity: .5;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; }
+
+.main-logo {
+  position: relative; }
 
 .pretty-design ul {
   text-align: center;
@@ -5967,40 +5989,51 @@ h2 {
     text-transform: uppercase;
     color: #cc0000;
     font-weight: bold;
-    margin-left: 116px; }
+    display: block; }
   .content-centering .date {
     color: gray; }
   .content-centering a {
     text-align: center;
     text-transform: uppercase; }
 
-.skaters img {
-  max-width: 100%; }
-.skaters h2 {
-  text-align: center;
-  margin-top: 60px;
-  color: white;
-  text-transform: uppercase; }
-.skaters .lance {
-  border: 4px solid white;
-  background: url("/Users/robertcable/Documents/code/2.2-powell-peralta-bootstrap/bower_components/bootstrap-sass/assets/images/skateboard-images/sk8er-4.png");
-  background-size: cover;
-  height: 200px; }
-.skaters .rodney {
-  border: 4px solid white;
-  background: url("/Users/robertcable/Documents/code/2.2-powell-peralta-bootstrap/bower_components/bootstrap-sass/assets/images/skateboard-images/sk8er-3.png");
-  background-size: cover;
-  height: 200px; }
-.skaters .steve {
-  border: 4px solid white;
-  background: url("/Users/robertcable/Documents/code/2.2-powell-peralta-bootstrap/bower_components/bootstrap-sass/assets/images/skateboard-images/sk8er-1.png");
-  background-size: cover;
-  height: 200px; }
-.skaters .tommy {
-  border: 4px solid white;
-  background: url("/Users/robertcable/Documents/code/2.2-powell-peralta-bootstrap/bower_components/bootstrap-sass/assets/images/skateboard-images/sk8er-2.png");
-  background-size: cover;
-  height: 200px; }
+.skaters {
+  margin-bottom: 20px; }
+  .skaters img {
+    margin-bottom: 20px; }
+  .skaters h2 {
+    text-align: center;
+    margin-top: 60px;
+    color: white;
+    text-transform: uppercase; }
+  .skaters .lance {
+    border: 4px solid white;
+    background: url("../images/skateboard-images/sk8er-4.png") no-repeat -60px 0px;
+    background-size: cover;
+    height: 200px; }
+  .skaters .rodney {
+    border: 4px solid white;
+    background: url("../images/skateboard-images/sk8er-3.png");
+    background-size: cover;
+    height: 200px; }
+  .skaters .steve {
+    border: 4px solid white;
+    background: url("../images/skateboard-images/sk8er-1.png");
+    background-size: cover;
+    height: 200px; }
+  .skaters .tommy {
+    border: 4px solid white;
+    background: url("../images/skateboard-images/sk8er-2.png");
+    background-size: cover;
+    height: 200px; }
+
+.row {
+  margin-bottom: 20px; }
+
+.skateboards {
+  background: white;
+  padding: 20px; }
+  .skateboards img {
+    padding: 10px; }
 
 .contact-form {
   background: white;
