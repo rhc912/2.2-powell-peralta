@@ -1,14 +1,211 @@
+// Color Pallet
+$white:  #fff;
+$blue: #424C8F;
+
+
 /* Bootstrap Variables */
 $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 
-
-$brand-primary: darken(red, 6.5%) !default; // #337ab7
+//$nav-red: darken(red, 6.5%);
+//$brand-primary: darken(red, 6.5%) !default; // #337ab7
 // Install Bootstrap
   @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+// Colors
+@mixin btn($color){
+  display:block;
+  width: 100%;
+  background-color: $color;
+  border: 1px solid darken($color, 10);
+  border-radius: 0px;
+  color: white;
+  border-bottom: 3px solid #84827F;
+}
+// Social Buttons
+@mixin social($color){
+  background-color: $color;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 38px;
+  font-size: 20px;
+  color: #757DB2;
+  text-align: center;
+  border-bottom: 3px solid #84827F;
+  transition: background-color 0.5s;
+  &:hover{
+    background-color: lighten($color,30);
+  }
+}
+ .face{
+   @include social(#424C8F);
+ }
+.rss{
+  @include social(#D5901A);
+}
+.twitter{
+  @include social(#6689C9);
+}
+.youtube{
+  @include social(#C21F17)
+}
 
+// Buttons
+.btn-sk8-news{
+  @include btn(#B82731)
+}
+.btn-skateboards{
+  @include btn(#B82731)
+}
+.btn-board-design{
+  @include btn(#B82731)
+}
+.btn-contact-us{
+  @include btn(#B82731)
+}
+.btn-submit{
+  @include btn(#B82731)
+}
 
-nav {
+.wrapper{
+  background: url('/Users/robertcable/Documents/code/2.2-powell-peralta-bootstrap/bower_components/bootstrap-sass/assets/images/skateboard-images/bg.jpg') no-repeat;
+  background-color: rgb(85,84,83);
+  background-size: cover;
+  max-width: 100%;
+}
+p{
+  color: #999999;
+}
+h2{
+  color: #999999;
+}
+
+// Navigation
+.top-nav{
+  ul{
+    float: right;
+    margin-right: 15px;
+    display: inline-block;
+    list-style: none; //All navs not responding to styles
+  }
+  li{
+
+    display:inline-block;
+  }
+  span{
+    text-transform: uppercase;
+    color: black;
+    margin-right: 82px;
+  }
+  .fa{
+    color: white;
+  }
+}
+.bottom-nav{
   ul{
     list-style: none;
+    display: inline-block; // ^Diddo
   }
+  li {
+    display: inline-block;
+  }
+}
+// Header
+.logo-container{
+  width: 20%;
+  margin: 0 auto; // in my actual container
+
+}
+.slide {
+  background: url('/Users/robertcable/Documents/code/2.2-powell-peralta-bootstrap/bower_components/bootstrap-sass/assets/images/skateboard-images/top-image.png');
+  background-size: cover;
+  max-width: 100%;
+  border: 6px solid white;
+}
+//Slide Controls (Inside header)
+.pretty-design{
+  ul{
+    text-align: center;
+    list-style: none;
+    // Transform rotate 45deg makes slide controls disappear
+  }
+}
+.slide-controls{
+  transform: rotate(90deg);
+}
+// Mid Section
+.content-centering{
+  display: inline-block;
+  .news{
+    padding: 0px;
+  }
+
+  .content-tile{
+    background-color: white;
+    padding: 10px;
+  }
+  a{
+    text-transform: uppercase;
+    color: darken(red,10);
+    font-weight: bold;
+    margin-left: 116px;
+  }
+  .date{
+    color: gray;
+  }
+a{
+  text-align: center;
+  text-transform: uppercase;
+ // Cannot find how to get brackets instead.
+  }
+}
+// Skate Pros
+.skaters {
+img{
+   max-width: 100%;
+  }
+  h2{
+    text-align: center;
+    margin-top: 60px;
+    color: white;
+    text-transform: uppercase;
+  }
+  .lance{
+    border: 4px solid white;
+    background: url('/Users/robertcable/Documents/code/2.2-powell-peralta-bootstrap/bower_components/bootstrap-sass/assets/images/skateboard-images/sk8er-4.png');
+    background-size: cover;
+    height: 200px;
+  }
+  .rodney{
+    border: 4px solid white;
+    background: url('/Users/robertcable/Documents/code/2.2-powell-peralta-bootstrap/bower_components/bootstrap-sass/assets/images/skateboard-images/sk8er-3.png');
+    background-size: cover;
+    height: 200px;
+  }
+  .steve{
+    border: 4px solid white;
+    background: url('/Users/robertcable/Documents/code/2.2-powell-peralta-bootstrap/bower_components/bootstrap-sass/assets/images/skateboard-images/sk8er-1.png');
+    background-size: cover;
+    height: 200px;
+  }
+  .tommy{
+    border: 4px solid white;
+    background: url('/Users/robertcable/Documents/code/2.2-powell-peralta-bootstrap/bower_components/bootstrap-sass/assets/images/skateboard-images/sk8er-2.png');
+    background-size: cover;
+    height: 200px;
+  }
+}
+// Contact Form
+.contact-form{
+  background: white;
+  padding: 10px;
+}
+h4{
+  color: #999999;
+}
+
+.form-field{
+  background: white;
+  padding: 10px;
+}
+label{
+  color: #999999;
 }

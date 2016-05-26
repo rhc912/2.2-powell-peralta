@@ -1,32 +1,200 @@
 <!DOCTYPE html>
 <html>
   <head>
+<!-- Meta Tags -->
     <meta charset="utf-8">
-    <title>SASS + Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Powell Peralta</title>
+<!-- Stylesheets -->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   </head>
   <body>
-    <section>
-      <nav>
-        <ul>
-          <li><a  class="btn btn-primary" href="#">Link 1</a></li>
-          <li><a href="#"><i class="glyphicon glyphicon-music"></i>Link 2</a></li>
-          <li><a href="#">Link 3</a></li>
-        </ul>
+  <div class="wrapper">
+    <div class="container">
+      <!-- Top Nav (add btn 's') -->
+      <nav class="top-nav row"> <!-- add div row -->
+        <div class="col-xs-12 col-sm-6 col-md-6 col-md-offset-6">
+          <ul>
+            <li>
+              <a href="#"><span>Subscribe • </span>
+            </a>
+          </li>
+            <li>
+              <a href="#">
+<!-- Not Working --> <i class="icon-ellipsis-vertical" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="face">
+              <a href="#">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+           </li>
+            <li class="rss">
+              <a href="#">
+                <i class="fa fa-rss" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="twitter">
+            <a href="#">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+          </li>
+            <li class="youtube">
+              <a href="#">
+                <i class="fa fa-youtube" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
       </nav>
-    <section>
+          <!-- Bottom Nav -->
+        <nav class="bottom-nav">
+            <div class="row">
 
-      <div class="row">
-        <div class="col-md-8">
-          <div class="col-md-6">
+              <ul class="col-xs-12 col-sm-6 col-md-12">
+                <li class="col-md-3">
+                    <button type="button" class="btn-sk8-news">
+                      &#8212;SK8 NEWS&#8212;
+                    </button>
+                </li>
+                <li class="col-md-3">
+
+                    <button type="button" class="btn-skateboards">
+                      &#8212;SKATEBOARDS&#8212;
+                    </button>
+                </li>
+                <li class="col-md-3">
+                    <button type="button" class="btn-board-design">
+                    &#8212;BOARD DESIGN&#8212;
+                  </button>
+                </li>
+              <li class="col-md-3">
+                  <button type="button" class="btn-contact-us">
+                  &#8212;CONTACT US&#8212;
+                  </button>
+                </li>
+              </ul>
 
           </div>
+        </nav>
+
+
+    <!-- Header -->
+    <header class="pretty-design">
+        <div class="col-xs-12 col-md-12">
+          <div class="slide"> <!-- set a background image -->
+              <img src="/Users/robertcable/Documents/code/2.2-powell-peralta-bootstrap/bower_components/bootstrap-sass/assets/images/skateboard-images/peralta-logo.png">
+          </div>
+              <ul class="slide-controls">
+                <li><input type="radio"/></li>
+                <li><input type="radio"/></li>
+                <li><input type="radio"/></li>
+              </ul>
         </div>
+    </header>
+    <!-- Mid Section -->
+    <div class="mid-section">
+        <div class="col-md-12">
+          <div class="content-centering">
+              <div class="news col-md-4">
+                <div class="content-tile">
+                    <h3>Tony Hawk Foundation Raises Big Money at Celeb Fundraiser</h3>
+                    <span class="date">October 10, 2013</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet maxime quo eius minima praesentium. Ex, sequi harum deleniti quaerat omnis asperiores! Earum, laudantium! Architecto odio ducimus eveniet dolorum. Obcaecati, provident.</p>
+                    <a href="#">&#8212;read more&#8212;</a>
+                </div>
+              </div>
+
+              <div class="news2 col-md-4">
+                <div class="content-tile">
+                    <h3>Rodney Mullen: Pop an ollie and innovate! (TED Talk)</h3>
+                    <span class="date">March 10, 2013</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas modi assumenda nobis voluptatum inventore, illo molestias quisquam. Eligendi, error est a quam suscipit, tenetur eius mollitia architecto numquam, cum beatae.</p>
+                    <a href="#">&#8212;read more&#8212;</a>
+                </div>
+              </div>
+
+              <div class="news col-md-4">
+                <div class="content-tile">
+                    <h3>Ray Barbee Talks 'Ban This'</h3>
+                    <span class="date">October 4, 2013</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos cupiditate molestiae iure sunt laudantium repudiandae sapiente illo enim quam necessitatibus suscipit, saepe, cumque quo accusamus fugit temporibus. Rem, quae, nesciunt.</p>
+                    <a href="#">&#8212;read more&#8212;</a>
+                </div>
+              </div>
+          </div>
+        </div>
+    </div>
+    <!-- Skate Pros -->
+  <div class="skaters">
+    <div class="col-md-8">
+        <div class="col-md-6">
+          <div class="lance">
+            <h2>Lance Mountain</h2>
+          </div>
+        </div>
+        <div class="hidden-xs col-md-6">
+          <div class="rodney">
+            <h2>Rodney Mullen</h2>
+          </div>
+        </div>
+        <div class="hidden-xs col-md-12">
+          <div class="steve">
+            <h2>Steve Caballero</h2>
+          </div>
+        </div>
+    </div>
+    <div class="hidden-xs col-md-4">
+      <div class="tommy">
+        <h2>Tommy Guerrero</h2>
+      </div>
+    </div>
+    <!-- Skateboards -->
+    <div class="col-sm-1 col-md-12">
+      <div class="skateboards">
+        <img src="/Users/robertcable/Documents/code/2.2-powell-peralta-bootstrap/bower_components/bootstrap-sass/assets/images/skateboard-images/sk8-3.png">
+        <img src="/Users/robertcable/Documents/code/2.2-powell-peralta-bootstrap/bower_components/bootstrap-sass/assets/images/skateboard-images/sk8-4.png">
+        <img src="/Users/robertcable/Documents/code/2.2-powell-peralta-bootstrap/bower_components/bootstrap-sass/assets/images/skateboard-images/sk8-5.png">
+        <img src="/Users/robertcable/Documents/code/2.2-powell-peralta-bootstrap/bower_components/bootstrap-sass/assets/images/skateboard-images/sk8-6.png">
+        <img src="/Users/robertcable/Documents/code/2.2-powell-peralta-bootstrap/bower_components/bootstrap-sass/assets/images/skateboard-images/sk8-7.png">
+        <img src="/Users/robertcable/Documents/code/2.2-powell-peralta-bootstrap/bower_components/bootstrap-sass/assets/images/skateboard-images/sk8-8.png">
+        <img src="/Users/robertcable/Documents/code/2.2-powell-peralta-bootstrap/bower_components/bootstrap-sass/assets/images/skateboard-images/sk8-9.png">
+        <img src="/Users/robertcable/Documents/code/2.2-powell-peralta-bootstrap/bower_components/bootstrap-sass/assets/images/skateboard-images/sk8-10.png">
+        <img src="/Users/robertcable/Documents/code/2.2-powell-peralta-bootstrap/bower_components/bootstrap-sass/assets/images/skateboard-images/sk8-2.png">
+        <img src="/Users/robertcable/Documents/code/2.2-powell-peralta-bootstrap/bower_components/bootstrap-sass/assets/images/skateboard-images/sk8-1.png">
+      </div>
+    </div>
+  </div>
+    <!-- Contact Us Form -->
+    <div class="contact row">
+      <div class="col-md-6">
+          <div class="contact-form">
+            <h4>Contact Us for More Information</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>       <!-- Add divs for social media logos, also anchor tags with img in those -->
+      <div class="col-md-6">
+        <form class="form-field">
+  <fieldset class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+    <small class="text-muted">We'll never share your email with anyone else.</small>
+  </fieldset>
+  <fieldset class="form-group">
+    <label for="exampleTextarea">Your Message</label>
+    <textarea class="form-control" id="Your Message" rows="3"></textarea>
+  </fieldset>
+<button type="button" class="btn-submit">Submit</button>
+</form>
       </div>
 
-    </section>
+</div>
 
-    </section>
-  </body>
+
+      </div>
+    </div>
+  </div>
+</body>
 </html>
