@@ -66,10 +66,20 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 }
 
 .wrapper{
-  background: url('/Users/robertcable/Documents/code/2.2-powell-peralta-bootstrap/bower_components/bootstrap-sass/assets/images/skateboard-images/bg.jpg') no-repeat;
+  background: url('../images/skateboard-images/bg.jpg') no-repeat;
   background-color: rgb(85,84,83);
   background-size: cover;
   max-width: 100%;
+  position: relative;
+&:before{
+  content: "";
+  background-color: rgba(50,50,50,0.7);
+  position:absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
 }
 p{
   color: #999999;
@@ -92,7 +102,7 @@ h2{
   }
   span{
     text-transform: uppercase;
-    color: black;
+    color: white;
     margin-right: 82px;
   }
   .fa{
@@ -115,10 +125,24 @@ h2{
 
 }
 .slide {
-  background: url('/Users/robertcable/Documents/code/2.2-powell-peralta-bootstrap/bower_components/bootstrap-sass/assets/images/skateboard-images/top-image.png');
+  background: url('../images/skateboard-images/top-image.png');
   background-size: cover;
   max-width: 100%;
+  position: relative;
   border: 6px solid white;
+&:before{
+  content: "";
+  background: url('../images/skateboard-images/grid.png');
+  opacity: .5;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+}
+.main-logo{
+  position: relative;
 }
 //Slide Controls (Inside header)
 .pretty-design{
@@ -146,7 +170,7 @@ h2{
     text-transform: uppercase;
     color: darken(red,10);
     font-weight: bold;
-    margin-left: 116px;
+    display: block;
   }
   .date{
     color: gray;
@@ -159,8 +183,9 @@ a{
 }
 // Skate Pros
 .skaters {
+  margin-bottom: 20px;
 img{
-   max-width: 100%;
+   margin-bottom: 20px;
   }
   h2{
     text-align: center;
@@ -170,27 +195,37 @@ img{
   }
   .lance{
     border: 4px solid white;
-    background: url('/Users/robertcable/Documents/code/2.2-powell-peralta-bootstrap/bower_components/bootstrap-sass/assets/images/skateboard-images/sk8er-4.png');
+    background: url('../images/skateboard-images/sk8er-4.png') no-repeat -60px 0px;
     background-size: cover;
     height: 200px;
   }
   .rodney{
     border: 4px solid white;
-    background: url('/Users/robertcable/Documents/code/2.2-powell-peralta-bootstrap/bower_components/bootstrap-sass/assets/images/skateboard-images/sk8er-3.png');
+    background: url('../images/skateboard-images/sk8er-3.png');
     background-size: cover;
     height: 200px;
   }
   .steve{
     border: 4px solid white;
-    background: url('/Users/robertcable/Documents/code/2.2-powell-peralta-bootstrap/bower_components/bootstrap-sass/assets/images/skateboard-images/sk8er-1.png');
+    background: url('../images/skateboard-images/sk8er-1.png');
     background-size: cover;
     height: 200px;
   }
   .tommy{
     border: 4px solid white;
-    background: url('/Users/robertcable/Documents/code/2.2-powell-peralta-bootstrap/bower_components/bootstrap-sass/assets/images/skateboard-images/sk8er-2.png');
+    background: url('../images/skateboard-images/sk8er-2.png');
     background-size: cover;
     height: 200px;
+  }
+}
+.row{
+  margin-bottom: 20px;
+}
+.skateboards{
+  background: white;
+  padding: 20px;
+  img{
+    padding: 10px;
   }
 }
 // Contact Form
