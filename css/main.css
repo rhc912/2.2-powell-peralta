@@ -5944,7 +5944,7 @@ h2 {
 
 .bottom-nav ul {
   list-style: none;
-  display: inline-block; }
+  display: block; }
 .bottom-nav li {
   display: inline-block; }
 
